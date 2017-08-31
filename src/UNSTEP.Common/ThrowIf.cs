@@ -15,5 +15,11 @@
             if (string.IsNullOrEmpty(value))
                 throw new ArgumentNullException(parameterName);
         }
+
+        public static void IsBefore(DateTime value, DateTime dateToPrecede, string parameterName)
+        {
+            if (value > dateToPrecede)
+                throw new ArgumentException(parameterName);
+        }
     }
 }
