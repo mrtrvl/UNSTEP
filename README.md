@@ -85,5 +85,8 @@ Query (View Model):
    * Do not modify any system state
    * No rule checking 
 
+### Exceptions
+**Only catch an exception you can handle**
+
 <!-- All referenced links  -->
 [properties-vs-public-variables]: https://blog.codinghorror.com/properties-vs-public-variables/
