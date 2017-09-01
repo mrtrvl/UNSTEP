@@ -6,6 +6,16 @@
 
 This project is brought to life as part of my **final college project** and I envision this _README_ to contain many notes, code snippets, thoughts, decisions and so on to base **my dissertation on**. Since this is a educational project, I'll always try to keep couple of issues open with `help wanted` tag of  various difficulty levels, to encourage fellow companions to jump into world of open source development with a warm welcome : )  
 
+**DISCLAIMER:**   
+This is a side project as a way to explore new stacks, deployment approaches and is not bound to any pragmatic concerns. It is over-engineered specifically for a reason so that I could learn from mistakes of over-engineering, and to identify what actually worked or didn't work! Let's [shave that Yak](http://sethgodin.typepad.com/seths_blog/2005/03/dont_shave_that.html)
+
+
+## Glossary
+**Schedule** - A period of time which contains list of items   
+**Course** - Degree or diploma program  
+**Subject** - One unit of study which one can enroll as part of the course  
+**Lecture** - One unit of study which is part of the subject
+
 ## List of used tools, platforms, libraries and more
 C#
 .NET Core 2.0  
