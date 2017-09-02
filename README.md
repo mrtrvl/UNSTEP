@@ -102,7 +102,31 @@ Query (View Model):
    * No rule checking 
 
 ### Exceptions
-**Only catch an exception you can handle**
+Exceptions should be used only in exceptional cases. If there is a way to recover from, or expect an exception, then it is not really an exceptional case.
 
+>"Only catch an exception you can handle and avoid rethrowing the same exception. Caller might forget to catch an exception, but it is highly unlikely for a caller to forget to **use the returned object** it asked for" - Zoran Horvat  
+
+Return type of a method should grasp both positive and negative outcomes.
+
+#### Either
+Either type comes from functional languages which contains two components, one indicating success, other failure. Consumer doesn't know what Either type will contain, but it must provide strategy for both scenarios either way. 
+
+This goes over my head at the moment of writing, but I'll include this in the code with every intention to find a suitable place to see this through in the practice. 
+
+Anyway, thanks for Zoran Horvat from Pluralsight (course)[advanced-defensive-programming-techniques] to blow my mind.. 
+
+```csharp
+Uri address = new Uri("https://something.out.there");
+Either<Failed, Resource> result = Fetch(address);
+
+string report = result
+     .MapLeft(failure => $"Error fetching the resource - {failure}")
+     .Reduce(resource => resource.Data);
+
+Console.WriteLine(report);
+
+```
 <!-- All referenced links  -->
 [properties-vs-public-variables]: https://blog.codinghorror.com/properties-vs-public-variables/
+
+[advanced-defensive-programming-techniques]:(https://app.pluralsight.com/library/courses/advanced-defensive-programming-techniques/table-of-contents)
