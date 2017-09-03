@@ -24,6 +24,7 @@ xUnit
 
 ## Coding practices and learnings I aspire to follow
 - Use properties instead of fields: [Link][properties-vs-public-variables] 
+- Comments should tell **why** something is being done. The code already tells what is being done. Comment the code with a higher-level view of what the code aims to ultimately achieve, with pre- and post- conditions. You need to comment on (say) peculiar implementations or checks that are necessary yet counter-intuitive, and possibly reference specification documents etc
 
 ### Create consistent objects 
 Each and every object should start off in a complete and consistent state! 
@@ -92,6 +93,21 @@ public void DoSomething(Day day) // enum assignement verification is not done
 ```
 
 ### CQRS - Command-Query Segregation Principle
+Method should either modify state, or return a value, but not both!
+
+```csharp
+public void DoSomething() 
+{
+    // modifies state, no returning result alloved
+}
+```
+```csharp
+public IResult GetResult() 
+{
+    // no changes to the state allowed. Only get the result. 
+}
+```
+
 Command (Model):  
    * Modifies the system state
    * Applies all the rules
