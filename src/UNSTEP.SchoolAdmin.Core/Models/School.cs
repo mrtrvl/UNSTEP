@@ -1,6 +1,6 @@
 ﻿namespace UNSTEP.SchoolAdmin.Core.Models
 {
-    using UNSTEP.Common;
+    using Common;
 
     public class School
     {

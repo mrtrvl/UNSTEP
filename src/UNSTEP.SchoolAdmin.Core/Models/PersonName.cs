@@ -1,7 +1,7 @@
 ﻿namespace UNSTEP.SchoolAdmin.Core.Models
 {
-    using UNSTEP.Common;
-    using UNSTEP.SharedKernel;
+    using Common;
+    using SharedKernel;
 
     public class PersonName : ValueObject<PersonName>
     {

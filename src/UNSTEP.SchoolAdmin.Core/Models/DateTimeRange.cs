@@ -2,8 +2,8 @@
 {
     using System;
 
-    using UNSTEP.Common;
-    using UNSTEP.SharedKernel;
+    using Common;
+    using SharedKernel;
 
     public class DateTimeRange : ValueObject<DateTimeRange>
     {
