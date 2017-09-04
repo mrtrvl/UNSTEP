@@ -25,6 +25,7 @@ xUnit
 ## Coding practices and learnings I aspire to follow
 - Use properties instead of fields: [Link][properties-vs-public-variables] 
 - Comments should tell **why** something is being done. The code already tells what is being done. Comment the code with a higher-level view of what the code aims to ultimately achieve, with pre- and post- conditions. You need to comment on (say) peculiar implementations or checks that are necessary yet counter-intuitive, and possibly reference specification documents etc
+- Domain model is blissfully unaware how data is requested or how it is stored in underlaying datastore. 
 
 ### Create consistent objects 
 Each and every object should start off in a complete and consistent state! 

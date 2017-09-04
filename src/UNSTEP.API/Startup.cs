@@ -5,6 +5,7 @@
     using Microsoft.AspNetCore.Http;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
+    using SchoolAdmin.Data;
 
     public class Startup
     {
@@ -17,6 +18,9 @@
 
         public void ConfigureServices(IServiceCollection services)
         {
+            // Add application services
+            services.AddSingleton<ISchoolRepository>(new MockSchoolRepository());
+
             services.AddMvc(
                 setupAction => { setupAction.ReturnHttpNotAcceptable = true; });
         }

@@ -1,6 +1,7 @@
 ﻿namespace UNSTEP.API.Models
 {
-    public class TeacherReturn
+    public class TeacherModel
     {
+        
     }
 }

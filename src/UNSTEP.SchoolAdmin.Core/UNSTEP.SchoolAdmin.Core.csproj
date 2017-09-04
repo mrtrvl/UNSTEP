@@ -9,8 +9,4 @@
     <ProjectReference Include="..\UNSTEP.SharedKernel\UNSTEP.SharedKernel.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ViewModels\" />
-  </ItemGroup>
-
 </Project>
