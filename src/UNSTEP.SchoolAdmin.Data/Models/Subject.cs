@@ -3,13 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace UNSTEP.SchoolAdmin.Data.Models
 {
-    public class Teacher : PersistentObject<Guid>
+    public class Subject : PersistentObject<Guid>
     {
         [Required]
-        public string FirstName { get; set; }
-
-        [Required]
-        public string LastName { get; set; }
+        public string Name { get; set; }
 
         [Required]
         public Guid SchoolId { get; set; }
