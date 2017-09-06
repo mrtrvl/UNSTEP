@@ -9,12 +9,33 @@ This project is brought to life as part of my **final college project** and I en
 **DISCLAIMER:**   
 This is a side project as a way to explore new stacks, deployment approaches and is not bound to any pragmatic concerns. It is over-engineered specifically for a reason so that I could learn from mistakes of over-engineering, and to identify what actually worked or didn't work! Let's [shave that Yak](http://sethgodin.typepad.com/seths_blog/2005/03/dont_shave_that.html)
 
+## DDD (Domain Driven Design)
+> The goal of domain-driven design is to create better software by focusing on a model of the domain rather than the technology.
+>
+> -- <cite>Eric Evans</cite>
 
-## Glossary
+> Use DDD to model a complex domain in the simplest possible way. Never use DDD to make your solution more complex. DDD gives you both the strategic and tactical modeling tools necessary to design high-quality software that meets core business objectives.
+>
+> -- <cite>Vaughn Vernon</cite>
+
+While the aim of this project is to be one-stop shop for students, it is not necessarily meant to be used by students alone. In order to provide that quality information and functionality to the students, the school personel needs to be onboard as-well. One of the most immediate concerns is actually planning the schedule, which by the time of this writing, is mainly done in Excel. While adding the necessary resources to the system seems quite trivial, CRUD (Create, Read, Update, Delete) like operation, creating and planning a schedule is itself much more complex with various business rules. That's where I imagine the DDD would really kick in!
+
+
+### Ubiquitous Language
+> The Ubiquitous Language is a shared language developed by the team—a team composed of both domain experts and software developers.
+>
+> -- <cite>Vaughn Vernon</cite>
+
 **Schedule** - A period of time which contains list of items   
 **Course** - Degree or diploma program  
 **Subject** - One unit of study which one can enroll as part of the course  
 **Lecture** - One unit of study which is part of the subject
+
+### Bounded Context
+>A Bounded Context gives the team a modeling boundary in which to create a solution to a specific business problem domain. Inside a single Bounded Context is a Ubiquitous Language formulated by the team. It is spoken among the team and in the software model. Disparate teams, sometimes each responsible for a given Bounded Context, use Context Maps to strategically segregate Bounded Contexts and understand their integrations.
+>
+> -- <cite>Vaughn Vernon</cite>
+
 
 ## List of used tools, platforms, libraries and more
 C#
